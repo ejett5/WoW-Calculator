@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>WoW Calculator</title>
+    
+</head>
+
+<!-- Currently the stylesheet is not linking and this is only css working-->
+<style>
+    .home{
+        background-color: rgb(255, 230, 206);
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: bisque;
+    }
+    .grid-item{
+        background-color: lightblue;
+        border: 1px solid;
+        border-color: black;
+        padding: 20px;
+        font-size: 15px;
+        text-align:center;
+    }
+
+    .grid-special{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        background-color: bisque;
+    }
+
+    .grid-small{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: bisque;
+    }
+    .pageDivision{
+        size: 20px;
+        color: black;
+    }
+</style>
+
+
+<body class="home">
+
+    <h1> WoW Calculator</h1>
+    <!--storing calculations for various modifiers-->
+    <h2><b>Damage Modifiers</b></h3>
+<!-- taking input and following the formula to derive the modifier-->
+    <p><b><i>Attack Bonus</i></b></p>
+    <div class = "grid-container">
+    <div class = "grid-item">Base Attack Bonus +</div>
+    <div class = "grid-item">Strength Modifier +</div>
+    <div class = "grid-item">Size Modifier = </div>
+    <div class = "grid-item"> </div>
+</div>
+
+<!--Range attack of adding modifiers-->
+<p><b><i>Attack Bonus</b></i></p>
+    <div class = "grid-special">
+    <div class = "grid-item">Base Attack Bonus + <input type ="number"/></div>
+    <div class = "grid-item">Agility Modifier +<input type ="number"/></div>
+    <div class = "grid-item">Size Modifier +<input type ="number"/></div>
+    <div class = "grid-item">Range penalty = <input type ="number"/> </div>
+    <div class = "grid-item"></div>
+</div>
+
+    <!--Armor class for how hard it is to hit opponent-->
+    <p><b><i>Armor Class</i><span style = "font-size: 10px">(touch attacks disregard armour)</span> </b></p>
+    <div class = "grid-special">
+    <div class = "grid-item">10 + </div>
+    <div class = "grid-item">Shield Bonus + <input type ="number"/></div>
+    <div class = "grid-item">Agility Modifier + <input type ="number"/></div>
+    <div class = "grid-item">Size Modifier = <input type ="number"/> </div>
+    <div class = "grid-item"> </div>
+</div>
+
+<!--finding out how much damage is not taken by the player-->
+<p><b><i>Saving Throw</i><span style = "font-size: 10px">(reflex = dodge; Will = magical and resist mental influence; Fortitude = vitality withdrawal includes stamina mod)</span> </b></p>
+<div class = "grid-small">
+<div class = "grid-item">Base Save Bonus +</div><!-- base save + Ability Mod = Save Throw-->
+<div class = "grid-item">Ability Modifier</div>
+<div class = "grid-item"></div>
+
+</div>
+    
+
+</div>
+<hr>
+    
+<h3>Construction Modifiers</h3>
+<!--Different ways determining the construction success and the items vale or fail rate-->
+<div class = "grid-container">
+
+    <div class = "grid-item">Tech Limit</div>
+    <div class = "grid-item">Complexity Score</div>
+    <div class = "grid-item">Market Value</div>
+    <div class = "grid-item">Placeholder</div>
+    <div class = "grid-item">( check)</div>
+    <div class = "grid-item">( check)</div>
+    <div class = "grid-item">( check)</div>
+    <div class = "grid-item">( check)</div>
+    
+
+</div>
+
+
+<h2>Other Things</h2>
+<p>Place holder</p>
+
+<script src="script.js">
+
+</script>
+</body>
+
+</html>
