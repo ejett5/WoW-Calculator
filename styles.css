@@ -1,18 +1,32 @@
 /* TODO It is not linking to the index*/
 
-    grid-container{
+.main{
+    background-color: bisque;
+}
+    
+.grid-container{
         display: grid;
         grid-template-columns: auto auto auto auto;
         background-color: bisque;
     }
-    grid-item{
+    
+    .grid-item{
+        display: inline-block;
         background-color:aliceblue;
         border: 1px solid;
         border-color: purple;
         padding: 20px;
         font-size: 15px;
-        text-align:center;
+        text-align:justify;
+        
     }
-.main{
-    background-color: bisque;
+
+p{
+    text-align: center;
+    font-size: large;
+}
+
+.sub{
+    font-size: smaller;
+    font-style: italic;
 }
