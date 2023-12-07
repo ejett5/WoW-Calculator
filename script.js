@@ -14,4 +14,5 @@ myFunction(baseAttack + strengthMod +sizeMod);{
 armorFunction(10, shieldBonus, agilityMod, sizeMod);{
     return( 10 + shieldBonus + agilityMod + sizeMod)
 }
+console.log(myFunction)
 /*same for attack but IF range Penalty add that Else just sum */
