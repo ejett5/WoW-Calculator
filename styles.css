@@ -1,11 +1,22 @@
-/* TODO It is not linking to the index*/
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    background-color: yellow;
+    margin: 4px;
+    padding: 3px;
+    justify-content: center;
+    align-content: left;
+}
 
 .main{
     background-color: bisque;
+    margin: 15px;
 }
     
 .grid-container{
-        display: grid;
+        display: flex;
         grid-template-columns: auto auto auto auto;
         background-color: bisque;
     }
@@ -19,6 +30,11 @@
         font-size: 15px;
         text-align:right;
         
+    }
+
+    .clicky{
+        display: flex;
+        align-items: center;
     }
 
 p{

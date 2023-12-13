@@ -7,7 +7,7 @@ var baseAttack = [];
 var strengthMod = [];
 var sizeMod = [];
 
-myFunction(baseAttack + strengthMod +sizeMod);{
+attackbonus();{
     return baseAttack + strengthMod + sizeMod;
 }
 

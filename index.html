@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href ="styles.css">
+    <script src="script.js"></script>
     <title>WoW Calculator</title>
     
 </head>
@@ -21,9 +22,11 @@
     <ul>Base Attack Bonus + <input type="number" name="number" id="number"></ul>
     <ul>Strength Modifier +<input type="number" name="number" id="number"></ul>
     <ul>Size Modifier<input type="number" name="number" id="number"></ul>
-    <script>
-        document.getElementById(myFunction).innerHTML
-    </script>
+    <div class="clicky">
+        <button onclick="attackbonus(this)">Your Fate</button>
+    </div>
+    
+    
 
 </div>
     
@@ -38,7 +41,10 @@
     <ul>Shield Bonus +<input type="number" name="number" id="shieldBonus"></ul>
     <ul>Agility Modifier +<input type="number" name="number" id="agilityModifier"></ul>
     <ul>Size Modifier<input type="number" name="number" id="sizeModifier"></ul>
-    <ul></ul>
+    
+    <div class="clicky">
+        <button type="button" onclick="( 10 + shieldBonus + agilityModifier + sizeModifier)">Your Fate</button>
+    </div>
 
 </div>
 
@@ -48,6 +54,9 @@
     <ul>Base Attack Bonus<input type="number" name="number" id="baseAttack"></ul>
     <ul>Strength Modifier<input type="number" name="number" id="strModifier"></ul>
     <ul>Special Size Modifier<input type="number" name="number" id="spSizeModifier"></ul>
+    <div class="clicky">
+        <button onclick="(this)">Your Fate</button>
+    </div>
 </div>
 
 <!--finding out how much damage is not taken by the player-->
@@ -57,6 +66,9 @@
     <p class="sub">(reflex = dodge; Will = magical and resist mental influence; Fortitude = vitality withdrawal includes stamina mod)</p>
     <ul>Bonus Save +<input type="number" name="number" id="bonusSave"> </ul>
     <ul>Ability Modifier<input type="number" name="number" id="abilityMod"></ul>
+    <div class="clicky">
+        <button onclick="(this)">Your Fate</button>
+    </div>
 </div>
 
 
