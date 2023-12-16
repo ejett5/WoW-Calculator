@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+h2{
+    text-align: center;
+}
+
 button{
     background-color: yellow;
     margin: 4px;
