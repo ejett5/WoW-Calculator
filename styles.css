@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+h1{
+    text-align: center;
+    margin: 5px;
+}
+
 h2{
     text-align: center;
 }
