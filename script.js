@@ -18,7 +18,7 @@ console.log("Test")
 //     [abScore = 12, 1],
 //     [abScore = 13, 1], etc
 
-// function is taken in N; then return (N * 0.5).floor - 5 ; see above as reference to check it is working
+// function is taken in N; then return (N * 0.5).floor - 5 ; see above as reference to check it is working -spence helped with the formula creation
 
 function abilityModifierTable(){
     //user input
