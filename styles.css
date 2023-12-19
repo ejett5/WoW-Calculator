@@ -47,7 +47,7 @@ button{
         align-items: center;
     }
 
-p{
+.boxTitle{
     text-align: center;
     font-size: large;
 }

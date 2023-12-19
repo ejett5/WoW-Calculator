@@ -16,68 +16,73 @@
 
     <h1> WoW Calculator</h1>
     <!--storing calculations for various modifiers-->
-    <div class="modiferTable">
-        <div class="ability"> <input type="number" name="ability " id="Bob">
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="Bob">Your Ability Modifier Skill Level:</label>
+            <input type="number" name="ability " id="Bob">
 
+            <button onclick="abilityModifierTable()"> What's my Modifier?</button>
         </div>
     </div>
 
 
     <!--Ability Modifier Section, page 29 for table 1.1-->
 
-    <h2><b>Damage Modifiers</b></h3>
-        <div class="grid-container">
-            <!-- taking input and following the formula to derive the modifier-->
-            <div class="grid-item">
-                <p>Attack Bonus</p>
-                <ul>Base Attack Bonus + <input type="number" name="number" id="number"></ul>
-                <ul>Strength Modifier +<input type="number" name="number" id="number"></ul>
-                <ul>Size Modifier<input type="number" name="number" id="number"></ul>
-                <div class="clicky">
-                    <button onclick="attackbonus(this)">Your Fate</button>
-                    <!--Add display element for onclick ID-->
-                </div>
-
-
-
+    <h2><b>Damage Modifiers</b></h2>
+    <div class="grid-container">
+        <!-- taking input and following the formula to derive the modifier-->
+        <div class="grid-item">
+            <p class="boxTitle">Attack Bonus</p>
+            <p>Base Attack Bonus + <input type="number" name="number" id="number"></p>
+            <p>Strength Modifier +<input type="number" name="number" id="number"></p>
+            <p>Size Modifier<input type="number" name="number" id="number"></p>
+            <div class="clicky">
+                <button onclick="attackbonus(this)">Your Fate</button>
+                <!--Add display element for onclick ID-->
             </div>
 
+        </div>
+    </div>
 
-            <!--Range attack of adding modifiers-->
 
-            <!--Armor class for how hard it is to hit opponent-->
-            <div class="grid-item">
-                <p>Armor Class</p>
-                <p class="sub">(touch attacks disregard armour)</p>
-                <ul>10 +</ul>
-                <ul>Shield Bonus +<input type="number" name="number" id="shieldBonus"></ul>
-                <ul>Agility Modifier +<input type="number" name="number" id="agilityModifier"></ul>
-                <ul>Size Modifier<input type="number" name="number" id="sizeModifier"></ul>
+    <!--Range attack of adding modifiers-->
 
-                <div class="clicky">
-                    <button type="button" onclick="( 10 + shieldBonus + agilityModifier + sizeModifier)">Your
-                        Fate</button>
-                </div>
+    <!--Armor class for how hard it is to hit opponent-->
+    <div class="grid-item">
+        <p class="boxTitle">Armor Class</p>
+        <p class="sub">(touch attacks disregard armour)</p>
+        <p>10 +</p>
+        <p>Shield Bonus +<input type="number" name="number" id="shieldBonus"></p>
+        <p>Agility Modifier +<input type="number" name="number" id="agilityModifier"></p>
+        <p>Size Modifier<input type="number" name="number" id="sizeModifier"></p>
 
-            </div>
-
-            <!--Grapple Check-->
-            <div class="grid-item">
-                <p>Grapple Check</p>
-                <ul>Base Attack Bonus<input type="number" name="number" id="baseAttack"></ul>
-                <ul>Strength Modifier<input type="number" name="number" id="strModifier"></ul>
-                <ul>Special Size Modifier<input type="number" name="number" id="spSizeModifier"></ul>
-                <div class="clicky">
-                    <button onclick="(this)">Your Fate</button>
-                </div>
-            </div>
+        <div class="clicky">
+            <button type="button" onclick="( 10 + shieldBonus + agilityModifier + sizeModifier)">Your
+                Fate</button>
         </div>
 
-        <!--finding out how much damage is not taken by the player-->
-        <hr>
-        <div class="grid-container">
-            <p>Saving Throws</p>
-            <p class="sub">(reflex = dodge; Will = magical and resist mental influence; Fortitude = vitality withdrawal
+    </div>
+
+    <!--Grapple Check-->
+    <div class="grid-item">
+        <p class="boxTitle">Grapple Check</p>
+        <ul>Base Attack Bonus<input type="number" name="number" id="baseAttack"></ul>
+        <ul>Strength Modifier<input type="number" name="number" id="strModifier"></ul>
+        <ul>Special Size Modifier<input type="number" name="number" id="spSizeModifier"></ul>
+        <div class="clicky">
+            <button onclick="(this)">Your Fate</button>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <!--finding out how much damage is not taken by the player-->
+    <div class="grid-container">
+        <div class="grid-item">
+            <p class="boxTitle">Saving Throws</p>
+            <p class="sub">(reflex = dodge; </p>
+            <p class="sub"> Intelligence = magical and resist mental influence;</p>
+            <p class="sub">Fortitude = vitality withdrawal
                 includes stamina mod)</p>
             <ul>Bonus Save +<input type="number" name="number" id="bonusSave"> </ul>
             <ul>Ability Modifier<input type="number" name="number" id="abilityMod"></ul>
@@ -86,58 +91,64 @@
             </div>
         </div>
 
-
-
-        <hr>
-
-
-        <!--TODO Add skill checks, check page 112 for -->
-
-        <!-- 1D20 + skill modifier; page 27 for ability modifier-->
-
-
-        <h3>Construction Modifiers</h3>
-        <!--Different ways determining the construction success and the items vale or fail rate-->
-
         <div class="grid-item">
-            <p>Collaborative Construction</p>
-            <ul>Number of Tinkers<input type="number" name="number" id="tinkerNumber"></ul>
-            <ul>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="number"></ul>
-        </div>
-        <div class="grid-item">
-            <p>Technological Limit</p>
-            <ul>1 +<input type="number" name="number" id="1"></ul>
-            <ul>Tinker Class Level +<input type="number" name="number" id="tinkClassLever"></ul>
-            <ul> feat Modifier +<input type="number" name="number" id="featMod"></ul>
-            <ul> Result: <input type="number" name="number"></ul>
+            <p>Magical Save</p>
         </div>
 
-
-        <div class="grid-item">
-            <p>"Place Holder"</p>
-            <ul>Tech Limit <input type="number" name="number" id="techLimit"></ul>
-            <ul>Complexity Score <input type="number" name="number" id="complexityScore"></ul>
-            <ul>Market Value <input type="number" name="number" id="marketValue"></ul>
-            <ul>Result: <input type="number" name="number"></ul>
-        </div>
-
-        <div class="grid-item">
-            <p>Market Value</p>
-            <ul>Function Difficulty<input type="number" name="number" id="fxDifficulty"></ul>
-            <ul>TS<input type="number" name="number" id="ts"></ul>
-            <ul>Complexity Score<input type="number" name="number" id="complexityScore"></ul>
-            <ul>TF<input type="number" name="number" id="tf"></ul>
-            <ul>MR<input type="number" name="number" id="mastRank"></ul>
-        </div>
+    </div>
 
 
 
-        <h2>Other Things</h2>
-        <p>Place holder</p>
+    <hr>
 
-        <script src="script.js">
 
-        </script>
+    <!--TODO Add skill checks, check page 112 for -->
+
+    <!-- 1D20 + skill modifier; page 27 for ability modifier-->
+
+
+    <h3>Construction Modifiers</h3>
+    <!--Different ways determining the construction success and the items vale or fail rate-->
+
+    <div class="grid-item">
+        <p class="boxTitle">Collaborative Construction</p>
+        <ul>Number of Tinkers<input type="number" name="number" id="tinkerNumber"></ul>
+        <ul>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="number"></ul>
+    </div>
+    <div class="grid-item">
+        <p class="boxTitle">Technological Limit</p>
+        <ul>1 +<input type="number" name="number" id="1"></ul>
+        <ul>Tinker Class Level +<input type="number" name="number" id="tinkClassLever"></ul>
+        <ul> feat Modifier +<input type="number" name="number" id="featMod"></ul>
+        <ul> Result: <input type="number" name="number"></ul>
+    </div>
+
+
+    <div class="grid-item">
+        <p class="boxTitle">"Place Holder"</p>
+        <ul>Tech Limit <input type="number" name="number" id="techLimit"></ul>
+        <ul>Complexity Score <input type="number" name="number" id="complexityScore"></ul>
+        <ul>Market Value <input type="number" name="number" id="marketValue"></ul>
+        <ul>Result: <input type="number" name="number"></ul>
+    </div>
+
+    <div class="grid-item">
+        <p class="boxTitle">Market Value</p>
+        <ul>Function Difficulty<input type="number" name="number" id="fxDifficulty"></ul>
+        <ul>TS<input type="number" name="number" id="ts"></ul>
+        <ul>Complexity Score<input type="number" name="number" id="complexityScore"></ul>
+        <ul>TF<input type="number" name="number" id="tf"></ul>
+        <ul>MR<input type="number" name="number" id="mastRank"></ul>
+    </div>
+
+
+
+    <h2>Other Things</h2>
+    <p>Place holder</p>
+
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>
