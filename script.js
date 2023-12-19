@@ -26,13 +26,16 @@ console.log("Test")
 
 
 
-function abilityModifierTable(){  //TODO link this function to the input id = "Bob"
+function abilityModifierTable(btn){  //TODO link this function to the input id = "Bob"
     //user input
-    var n = element.innerText("Bob");
+    var element = document.getElementById('Bob')
+    var n = element.value;
         
     // converting user input via formula
-    abilityModResult = Math.floor(n*0.5) -5
+    let abilityModResult = Math.floor(n*0.5) -5
+    // if mod result is 0 then is 0 etc
     console.log(abilityModResult);
+    btn.innerText = abilityModResult
 }
 //need to add changeinnerText for button to show result
         
