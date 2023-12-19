@@ -18,13 +18,23 @@ console.log("Test")
 //     [abScore = 12, 1],
 //     [abScore = 13, 1], etc
 
+
+// define getelementbyID
+// element.getElementByID = "Bob"
 // function is taken in N; then return (N * 0.5).floor - 5 ; see above as reference to check it is working -spence helped with the formula creation
+
+
+
 
 function abilityModifierTable(){  //TODO link this function to the input id = "Bob"
     //user input
-    n == document.getElementByID("Bob");
+    var n = element.innerText("Bob");
+        
+    // converting user input via formula
+    abilityModResult = Math.floor(n*0.5) -5
+    console.log(abilityModResult);
 }
-console.log((n*0.5).floor -5);
+//need to add changeinnerText for button to show result
         
     
 //make a d20 random generator
