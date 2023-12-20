@@ -32,12 +32,12 @@ function abilityModifierTable(btn){  //TODO link this function to the input id =
     var n = element.value;
         
     // converting user input via formula
-    let abilityModResult = Math.floor(n*0.5) -5
+    let abilityModResult = Math.floor((n*0.5) -5)
     // if mod result is 0 then is 0 etc
     console.log(abilityModResult);
-    btn.innerText = abilityModResult
+    btn.innerText = abilityModResult  //changeinnerText for button to show result
 }
-//need to add changeinnerText for button to show result
+
         
     
 //make a d20 random generator
