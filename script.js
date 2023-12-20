@@ -26,25 +26,25 @@ console.log("Test")
 
 
 
-function abilityModifierTable(btn){  //TODO link this function to the input id = "Bob"
+function abilityModifierTable(btn) {  //TODO link this function to the input id = "Bob"
     //user input
     var element = document.getElementById('Bob')
     var n = element.value;
-        
+
     // converting user input via formula
-    let abilityModResult = Math.floor((n*0.5) -5)
+    let abilityModResult = Math.floor((n * 0.5) - 5)
     // if mod result is 0 then is 0 etc
     console.log(abilityModResult);
     btn.innerText = abilityModResult  //changeinnerText for button to show result
 }
 
-        
-    
+
+
 //make a d20 random generator
-function d20(this){
-    let random20 = Math.floor(Math.random() * 20) +1; //random number between 1 and 20
-    console.log();
-    btn.innerText = d20  
+function d20(this) {
+    let random20 = Math.floor(Math.random() * 20) + 1; //random number between 1 and 20
+    console.log(random20);
+    btn.innerText = d20
 }
 
 //make array for housing skill check bonus (from character level)
