@@ -64,6 +64,7 @@ let agilityModifier;
 let spSizeModifier;
 let bonusSave;
 let abilityMod;
+let grpCheck;
 
 // function for the attack bonus
 function attackModifier() {
@@ -84,18 +85,42 @@ function attackModifier() {
 
 
 function armorClass(){
-    shieldBonus = document.getElementById("shieldBonus");
+    shieldBonus = document.getElementById("shieldBonus").value;
     shieldBonus = parseInt(shieldBonus);
-    agilityModifier = document.getElementById("agilityModifier");
+    console.log(shieldBonus);
+    agilityModifier = document.getElementById("agilityModifier").value;
     agilityModifier = parseInt(agilityModifier);
-    sizeModifier = document.getElementById("sizeModifier");
-    sizeModifier = parseInt(sizeModifier);sizeModifier
+    console.log(agilityModifier);
+    sizeModifier = document.getElementById("sizeModifier").value;
+    sizeModifier = parseInt(sizeModifier);
+    console.log(sizeModifier);
 
     let armorMod =  shieldBonus + agilityModifier + sizeModifier + 10;
 
     // displaying output
-    console.log(armorClass);
-    document.getElementById("armorMod").innerText = armorMod
+    console.log(armorMod);
+    document.getElementById("armorDisplay").innerText = armorMod
+}
+
+
+// grapple check
+
+function grappleCheck(){
+    grpCheck = document.getElementById("grpCheck").value;
+    grpCheck = parseInt(grpCheck);
+    console.log(grpCheck);
+    strModifier = document.getElementById("strModifier").value;
+    strModifier = parseInt(strModifier);
+    console.log(strModifier);
+    spSizeModifier = document.getElementById("spsizeModifier").value;
+    spSizeModifier = parseInt(spSizeModifier);
+    console.log(spSizeModifier);
+
+    let floorTest =  grpCheck + strModifier + spSizeModifier;
+
+    // displaying output
+    console.log(floorTest);
+    document.getElementById("rolling").innerText = floorTest
 }
 
 
