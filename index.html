@@ -27,10 +27,15 @@
 
     <!--Random dice generator-->
     <div class="grid-container">
+        <!--d20 random generator-->
         <div class="grid-item">
             <button onclick="d20(this)">d20</button>
-
         </div>
+        <!--D8 random-->
+        <div class="grid-item">
+            <button onclick="d8(this)">d8</button>
+        </div>
+
     </div>
 
 
@@ -41,12 +46,13 @@
         <!-- taking input and following the formula to derive the modifier-->
         <div class="grid-item">
             <p class="boxTitle">Attack Bonus</p>
-            <p>Base Attack Bonus + <input type="number" name="number" id="number"></p>
-            <p>Strength Modifier +<input type="number" name="number" id="number"></p>
-            <p>Size Modifier<input type="number" name="number" id="number"></p>
+            <p>Base Attack + <input type="number" name="Base Attack" id="baseAttack"></p>
+            <p>Strength Modifier +<input type="number" name="Strength Modifier" id="str"></p>
+            <p>Size Modifier<input type="number" name="Size Modifier" id="sz"></p>
             <div class="clicky">
-                <button onclick="attackbonus(this)">Your Fate</button>
-                <!--Add display element for onclick ID-->
+                <button onclick="attackModifier()">Your Fate</button>
+                <p id="resultDisplay"></p>
+
             </div>
 
         </div>
@@ -60,13 +66,13 @@
         <p class="boxTitle">Armor Class</p>
         <p class="sub">(touch attacks disregard armour)</p>
         <p>10 +</p>
-        <p>Shield Bonus +<input type="number" name="number" id="shieldBonus"></p>
-        <p>Agility Modifier +<input type="number" name="number" id="agilityModifier"></p>
-        <p>Size Modifier<input type="number" name="number" id="sizeModifier"></p>
+        <p>Shield Bonus +<input type="number" name="Shield Bonus" id="shieldBonus"></p>
+        <p>Agility Modifier +<input type="number" name="Agility Modifier" id="agilityModifier"></p>
+        <p>Size Modifier<input type="number" name="Size Modifier" id="sizeModifier"></p>
 
         <div class="clicky">
-            <button type="button" onclick="( 10 + shieldBonus + agilityModifier + sizeModifier)">Your
-                Fate</button>
+            <button type="button" onclick="armorClass()">Your Fate</button>
+            <p id="resultDisplay"></p>
         </div>
 
     </div>

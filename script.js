@@ -41,11 +41,64 @@ function abilityModifierTable(btn) {  //TODO link this function to the input id 
 
 
 //make a d20 random generator
-function d20(this) {
+function d20(btn) {
     let random20 = Math.floor(Math.random() * 20) + 1; //random number between 1 and 20
     console.log(random20);
-    btn.innerText = d20
+    btn.innerText = random20
 }
+
+
+//make a d8 random generator
+function d8(btn) {
+    let random8 = Math.floor(Math.random() * 8) + 1; //random number between 1 and 20
+    console.log(random8);
+    btn.innerText = random8
+}
+
+// create variables that go into the bonus modifier functions
+let attackBonus;
+let strModifier;
+let sizeModifier;
+let shieldBonus;
+let agilityModifier;
+let spSizeModifier;
+let bonusSave;
+let abilityMod;
+
+// function for the attack bonus
+function attackModifier() {
+    // establishing variables
+    attackBonus = document.getElementById("baseAttack").value;
+    attackBonus = parseInt(attackBonus);
+    strModifier = document.getElementById("str").value;
+    strModifier = parseInt(strModifier);
+    sizeModifier = document.getElementById("sz").value;
+    sizeModifier = parseInt(sizeModifier);
+    // creating what they are to accomplish
+    let modAttack = attackBonus + strModifier + sizeModifier;
+
+    // putputting to display paragraph
+    console.log(modAttack);
+    document.getElementById("resultDisplay").innerText = modAttack
+}
+
+
+function armorClass(){
+    shieldBonus = document.getElementById("shieldBonus");
+    shieldBonus = parseInt(shieldBonus);
+    agilityModifier = document.getElementById("agilityModifier");
+    agilityModifier = parseInt(agilityModifier);
+    sizeModifier = document.getElementById("sizeModifier");
+    sizeModifier = parseInt(sizeModifier);sizeModifier
+
+    let armorMod =  shieldBonus + agilityModifier + sizeModifier + 10;
+
+    // displaying output
+    console.log(armorClass);
+    document.getElementById("armorMod").innerText = armorMod
+}
+
+
 
 //make array for housing skill check bonus (from character level)
 
