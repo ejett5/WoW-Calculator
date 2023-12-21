@@ -80,9 +80,9 @@
     <!--Grapple Check-->
     <div class="grid-item">
         <p class="boxTitle">Grapple Check</p>
-        <ul>Base Attack Bonus<input type="number" name="number" id="grpCheck"></ul>
-        <ul>Strength Modifier<input type="number" name="number" id="strModifier"></ul>
-        <ul>Special Size Modifier<input type="number" name="number" id="spSizeModifier"></ul>
+        <p>Grip Check<input type="number" name="Grip Check" id="grpCheck"></p>
+        <p>Strength Modifier<input type="number" name="strength Modifier" id="strModifier"></p>
+        <p>Special Size Modifier<input type="number" name="Special Size Modifier" id="specialSize"></p>
         <div class="clicky">
             <button type="button" onclick="grappleCheck()">Your Fate</button>
             <p id="rolling"></p>
@@ -99,10 +99,11 @@
             <p class="sub"> Intelligence = magical and resist mental influence;</p>
             <p class="sub">Fortitude = vitality withdrawal
                 includes stamina mod)</p>
-            <ul>Bonus Save +<input type="number" name="number" id="bonusSave"> </ul>
-            <ul>Ability Modifier<input type="number" name="number" id="abilityMod"></ul>
+            <p>Bonus Save +<input type="number" name="number" id="bonusSave"> </p>
+            <p>Ability Modifier<input type="number" name="number" id="abMod"></p>
             <div class="clicky">
-                <button onclick="(this)">Your Fate</button>
+                <button type="button" onclick="savingThrow()">Your Fate</button>
+            <p id="safe"></p>
             </div>
         </div>
 
@@ -127,33 +128,33 @@
 
     <div class="grid-item">
         <p class="boxTitle">Collaborative Construction</p>
-        <ul>Number of Tinkers<input type="number" name="number" id="tinkerNumber"></ul>
-        <ul>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="number"></ul>
+        <p>Number of Tinkers<input type="number" name="Number of Tinkers" id="tinkerNumber"></p>
+        <p>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="tinkerLevel"></p>
     </div>
     <div class="grid-item">
         <p class="boxTitle">Technological Limit</p>
-        <ul>1 +<input type="number" name="number" id="1"></ul>
-        <ul>Tinker Class Level +<input type="number" name="number" id="tinkClassLever"></ul>
-        <ul> feat Modifier +<input type="number" name="number" id="featMod"></ul>
-        <ul> Result: <input type="number" name="number"></ul>
+        <p>1 +<input type="number" name="number" id="1"></p>
+        <p>Tinker Class Level +<input type="number" name="number" id="tinkClassLevel"></p>
+        <p> feat Modifier +<input type="number" name="number" id="featMod"></p>
+        
     </div>
 
 
     <div class="grid-item">
         <p class="boxTitle">"Place Holder"</p>
-        <ul>Tech Limit <input type="number" name="number" id="techLimit"></ul>
-        <ul>Complexity Score <input type="number" name="number" id="complexityScore"></ul>
-        <ul>Market Value <input type="number" name="number" id="marketValue"></ul>
-        <ul>Result: <input type="number" name="number"></ul>
+        <p>Tech Limit <input type="number" name="number" id="techLimit"></p>
+        <p>Complexity Score <input type="number" name="number" id="complexityScore"></p>
+        <p>Market Value <input type="number" name="number" id="marketValue"></p>
+        <p>Result: <input type="number" name="number"></p>
     </div>
 
     <div class="grid-item">
         <p class="boxTitle">Market Value</p>
-        <ul>Function Difficulty<input type="number" name="number" id="fxDifficulty"></ul>
-        <ul>TS<input type="number" name="number" id="ts"></ul>
-        <ul>Complexity Score<input type="number" name="number" id="complexityScore"></ul>
-        <ul>TF<input type="number" name="number" id="tf"></ul>
-        <ul>MR<input type="number" name="number" id="mastRank"></ul>
+        <p>Function Difficulty<input type="number" name="number" id="fxDifficulty"></p>
+        <p>TS<input type="number" name="number" id="ts"></p>
+        <p>Complexity Score<input type="number" name="number" id="complexityScore"></p>
+        <p>TF<input type="number" name="number" id="tf"></p>
+        <p>MR<input type="number" name="number" id="mastRank"></p>
     </div>
 
 

@@ -65,6 +65,10 @@ let spSizeModifier;
 let bonusSave;
 let abilityMod;
 let grpCheck;
+let tinkerNumber;
+let tinkerLevel;
+let tinkClassLevel;
+let featMod;
 
 // function for the attack bonus
 function attackModifier() {
@@ -112,7 +116,7 @@ function grappleCheck(){
     strModifier = document.getElementById("strModifier").value;
     strModifier = parseInt(strModifier);
     console.log(strModifier);
-    spSizeModifier = document.getElementById("spsizeModifier").value;
+    spSizeModifier = document.getElementById("specialSize").value;
     spSizeModifier = parseInt(spSizeModifier);
     console.log(spSizeModifier);
 
@@ -121,6 +125,45 @@ function grappleCheck(){
     // displaying output
     console.log(floorTest);
     document.getElementById("rolling").innerText = floorTest
+}
+
+
+// saving throw
+
+function savingThrow(){bonusSave
+    bonusSave = document.getElementById("bonusSave").value;
+    bonusSave = parseInt(bonusSave);
+    console.log(bonusSave);
+    abilityMod = document.getElementById("abMod").value;
+    abilityMod = parseInt(abilityMod);
+    console.log(abilityMod);
+    
+
+    let savingThrow =  bonusSave + abilityMod;
+
+    // displaying output
+    console.log(savingThrow);
+    document.getElementById("safe").innerText = savingThrow
+}
+
+//magical save - placeholder TODO Get arguements for field
+
+
+// Collaborative Construction
+function collaborativeConstruction(){
+    bonusSave = document.getElementById("bonusSave").value;
+    bonusSave = parseInt(bonusSave);
+    console.log(bonusSave);
+    abilityMod = document.getElementById("abMod").value;
+    abilityMod = parseInt(abilityMod);
+    console.log(abilityMod);
+    
+
+    let savingThrow =  bonusSave + abilityMod;
+
+    // displaying output
+    console.log(savingThrow);
+    document.getElementById("safe").innerText = savingThrow
 }
 
 
