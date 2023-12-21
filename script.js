@@ -34,8 +34,15 @@ function abilityModifierTable(btn) {  //TODO link this function to the input id 
     // converting user input via formula
     let abilityModResult = Math.floor((n * 0.5) - 5)
     // if mod result is 0 then is 0 etc
-    console.log(abilityModResult);
+    if(n <=0 ){
+        abilityModResult = 0;
+        console.log(abilityModResult);
+        btn.innerText = abilityModResult  //changeinnerText for button to show result
+    }else{
+        console.log(abilityModResult);
     btn.innerText = abilityModResult  //changeinnerText for button to show result
+    }
+    
 }
 
 
