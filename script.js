@@ -17,7 +17,7 @@ console.log("Test")
 //     [abScore = 13, 1], etc   *This is the pattern the formula must follow for abilityModifierTable
 
 
-function abilityModifierTable(btn) {  
+function abilityModifierTable(btn) {    //TODO add a random d20 to ourputs and final sum
     //user input
     var element = document.getElementById('Bob')
     var n = element.value;
