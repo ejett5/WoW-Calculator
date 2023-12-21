@@ -69,6 +69,12 @@ let tinkerNumber;
 let tinkerLevel;
 let tinkClassLevel;
 let featMod;
+let techLimit;
+let complexityScore;
+let marketValue;
+let fxDifficulty;
+let tf;
+let mastRank;
 
 // function for the attack bonus
 function attackModifier() {

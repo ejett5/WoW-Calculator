@@ -56,38 +56,38 @@
             </div>
 
         </div>
-    
 
 
-    <!--Range attack of adding modifiers-->
 
-    <!--Armor class for how hard it is to hit opponent-->
-    <div class="grid-item">
-        <p class="boxTitle">Armor Class</p>
-        <p class="sub">(touch attacks disregard armour)</p>
-        <p>10 +</p>
-        <p>Shield Bonus +<input type="number" name="Shield Bonus" id="shieldBonus"></p>
-        <p>Agility Modifier +<input type="number" name="Agility Modifier" id="agilityModifier"></p>
-        <p>Size Modifier<input type="number" name="Size Modifier" id="sizeModifier"></p>
+        <!--Range attack of adding modifiers-->
 
-        <div class="clicky">
-            <button type="button" onclick="armorClass()">Your Fate</button>
-            <p id="armorDisplay"></p>
+        <!--Armor class for how hard it is to hit opponent-->
+        <div class="grid-item">
+            <p class="boxTitle">Armor Class</p>
+            <p class="sub">(touch attacks disregard armour)</p>
+            <p>10 +</p>
+            <p>Shield Bonus +<input type="number" name="Shield Bonus" id="shieldBonus"></p>
+            <p>Agility Modifier +<input type="number" name="Agility Modifier" id="agilityModifier"></p>
+            <p>Size Modifier<input type="number" name="Size Modifier" id="sizeModifier"></p>
+
+            <div class="clicky">
+                <button type="button" onclick="armorClass()">Your Fate</button>
+                <p id="armorDisplay"></p>
+            </div>
+
         </div>
 
-    </div>
-
-    <!--Grapple Check-->
-    <div class="grid-item">
-        <p class="boxTitle">Grapple Check</p>
-        <p>Grip Check<input type="number" name="Grip Check" id="grpCheck"></p>
-        <p>Strength Modifier<input type="number" name="strength Modifier" id="strModifier"></p>
-        <p>Special Size Modifier<input type="number" name="Special Size Modifier" id="specialSize"></p>
-        <div class="clicky">
-            <button type="button" onclick="grappleCheck()">Your Fate</button>
-            <p id="rolling"></p>
+        <!--Grapple Check-->
+        <div class="grid-item">
+            <p class="boxTitle">Grapple Check</p>
+            <p>Grip Check<input type="number" name="Grip Check" id="grpCheck"></p>
+            <p>Strength Modifier<input type="number" name="strength Modifier" id="strModifier"></p>
+            <p>Special Size Modifier<input type="number" name="Special Size Modifier" id="specialSize"></p>
+            <div class="clicky">
+                <button type="button" onclick="grappleCheck()">Your Fate</button>
+                <p id="rolling"></p>
+            </div>
         </div>
-    </div>
     </div>
     <hr>
 
@@ -103,7 +103,7 @@
             <p>Ability Modifier<input type="number" name="number" id="abMod"></p>
             <div class="clicky">
                 <button type="button" onclick="savingThrow()">Your Fate</button>
-            <p id="safe"></p>
+                <p id="safe"></p>
             </div>
         </div>
 
@@ -130,13 +130,23 @@
         <p class="boxTitle">Collaborative Construction</p>
         <p>Number of Tinkers<input type="number" name="Number of Tinkers" id="tinkerNumber"></p>
         <p>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="tinkerLevel"></p>
+        <div class="clicky">
+            <button type="button" onclick="savingThrow()">Your Fate</button>
+            <p id="safe"></p>
+        </div>
     </div>
+
+
     <div class="grid-item">
         <p class="boxTitle">Technological Limit</p>
         <p>1 +<input type="number" name="number" id="1"></p>
         <p>Tinker Class Level +<input type="number" name="number" id="tinkClassLevel"></p>
         <p> feat Modifier +<input type="number" name="number" id="featMod"></p>
-        
+        <div class="clicky">
+            <button type="button" onclick="savingThrow()">Your Fate</button>
+            <p id="safe"></p>
+        </div>
+
     </div>
 
 
@@ -146,6 +156,10 @@
         <p>Complexity Score <input type="number" name="number" id="complexityScore"></p>
         <p>Market Value <input type="number" name="number" id="marketValue"></p>
         <p>Result: <input type="number" name="number"></p>
+        <div class="clicky">
+            <button type="button" onclick="savingThrow()">Your Fate</button>
+            <p id="safe"></p>
+        </div>
     </div>
 
     <div class="grid-item">
@@ -155,6 +169,10 @@
         <p>Complexity Score<input type="number" name="number" id="complexityScore"></p>
         <p>TF<input type="number" name="number" id="tf"></p>
         <p>MR<input type="number" name="number" id="mastRank"></p>
+        <div class="clicky">
+            <button type="button" onclick="savingThrow()">Your Fate</button>
+            <p id="safe"></p>
+        </div>
     </div>
 
 
