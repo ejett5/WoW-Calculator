@@ -16,7 +16,9 @@
 
     <h1> WoW Calculator</h1>
     <!--storing calculations for various modifiers-->
+    <h2>Ability Modifier </h2>
     <div class="grid-container">
+        
         <div class="grid-item">
             <label for="Bob">Your Ability Skill Level:</label>
             <input type="number" name="Bob" id="Bob">
@@ -24,7 +26,7 @@
             <button onclick="abilityModifierTable(this)"> What's my Modifier?</button>
         </div>
     </div>
-
+<hr>
     <!--Random dice generator-->
     <div class="grid-container">
         <!--d20 random generator-->
@@ -40,7 +42,7 @@
 
 
     <!--Ability Modifier Section, page 29 for table 1.1-->
-
+<hr>
     <h2><b>Damage Modifiers</b></h2>
     <div class="grid-container">
         <!-- taking input and following the formula to derive the modifier-->
@@ -123,54 +125,51 @@
     <!-- 1D20 + skill modifier; page 27 for ability modifier-->
 
 
-    <h3>Construction Modifiers</h3>
+    
     <!--Different ways determining the construction success and the items vale or fail rate-->
-
-    <div class="grid-item">
-        <p class="boxTitle">Collaborative Construction</p>
-        <p>Number of Tinkers<input type="number" name="Number of Tinkers" id="tinkerNumber"></p>
-        <p>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="tinkerLevel"></p>
-        <div class="clicky">
-            <button type="button" onclick="collaborativeConstruction()">Your Fate</button>
-            <p id="boom"></p>
+    <h2>Construction Modifiers</h2>
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <p class="boxTitle">Collaborative Construction</p>
+            <p>Number of Tinkers<input type="number" name="Number of Tinkers" id="tinkerNumber"></p>
+            <p>Projects Average TInker Level<input type="number" name="avgTinkLevel" id="tinkerLevel"></p>
+            <div class="clicky">
+                <button type="button" onclick="collaborativeConstruction()">Your Fate</button>
+                <p id="boom"></p>
+            </div>
         </div>
-    </div>
-
-
-    <div class="grid-item">
-        <p class="boxTitle">Technological Limit</p>
-        <p>1 +</p>
-        <p>Tinker Class Level +<input type="number" name="number" id="tinkClassLevel"></p>
-        <p> feat Modifier +<input type="number" name="number" id="featMod"></p>
-        <div class="clicky">
-            <button type="button" onclick="technological()">Your Fate</button>
-            <p id="techytech"></p>
+        <div class="grid-item">
+            <p class="boxTitle">Technological Limit</p>
+            <p>1 +</p>
+            <p>Tinker Class Level +<input type="number" name="number" id="tinkClassLevel"></p>
+            <p> feat Modifier +<input type="number" name="number" id="featMod"></p>
+            <div class="clicky">
+                <button type="button" onclick="technological()">Your Fate</button>
+                <p id="techytech"></p>
+            </div>
         </div>
-
-    </div>
-
-
-    <div class="grid-item">
-        <p class="boxTitle">"Place Holder"</p>
-        <p>Tech Limit <input type="number" name="number" id="techLimit"></p>
-        <p>Complexity Score <input type="number" name="number" id="complexityScore"></p>
-        <p>Market Value <input type="number" name="number" id="marketValue"></p>
-        <div class="clicky">
-            <button type="button" onclick="theThingaMaBob()">Your Fate</button>
-            <p id="dunno"></p>
+        <div class="grid-item">
+            <p class="boxTitle">"Place Holder"</p>
+            <p>Tech Limit <input type="number" name="number" id="techLimit"></p>
+            <p>Complexity Score <input type="number" name="number" id="complexityScore"></p>
+            <p>Market Value <input type="number" name="number" id="marketValue"></p>
+            <div class="clicky">
+                <button type="button" onclick="theThingaMaBob()">Your Fate</button>
+                <p id="dunno"></p>
+            </div>
         </div>
-    </div>
-
-    <div class="grid-item">
-        <p class="boxTitle">Sell Value</p>
-        <p>Function Difficulty<input type="number" name="Function Difficulty" id="fxDifficulty"></p>
-        <p>TS<input type="number" name="TS" id="ts"></p>
-        <p>Complexity Score<input type="number" name="number" id="compScore"></p>
-        <p>TF<input type="number" name="TF" id="tf"></p>
-        <p>MR<input type="number" name="MR" id="mastRank"></p>
-        <div class="clicky">
-            <button type="button" onclick="sellValue()">Your Fate</button>
-            <p id="money"></p>
+        <div class="grid-item">
+            <p class="boxTitle">Sell Value</p>
+            <p>Function Difficulty<input type="number" name="Function Difficulty" id="fxDifficulty"></p>
+            <p>TS<input type="number" name="TS" id="ts"></p>
+            <p>Complexity Score<input type="number" name="number" id="compScore"></p>
+            <p>TF<input type="number" name="TF" id="tf"></p>
+            <p>MR<input type="number" name="MR" id="mastRank"></p>
+            <div class="clicky">
+                <button type="button" onclick="sellValue()">Your Fate</button>
+                <p id="money"></p>
+            </div>
         </div>
     </div>
 

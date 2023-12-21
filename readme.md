@@ -18,6 +18,10 @@ Upcoming Features:
 
 
 Support and Feedback:
-If you encounter any issues or have suggestions for improvements, please feel free to reach out. Your feedback is valuable in enhancing the WoW Calculator experience.
+If you encounter any issues or have suggestions for improvements, please feel free to reach out. Your feedback is valuable in enhancing the WoW Calculator experience.   
 
 Thank you for using the WoW calculator and I hope your adeventures in Azeroth be ongoing and ever calculated!
+
+
+If interested here is a quick Survey:    
+https://docs.google.com/forms/d/e/1FAIpQLScDVG8QWT9E7BFAPCSA-QCexo5MJnYEtkFISKZAwf7ldsD7TQ/viewform?usp=pp_url

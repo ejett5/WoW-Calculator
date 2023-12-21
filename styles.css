@@ -27,12 +27,14 @@ button{
     
 .grid-container{
         display: flex;
+        justify-content: center;
         grid-template-columns: auto auto auto auto;
         background-color: bisque;
     }
     
     .grid-item{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         background-color:aliceblue;
         border: 1px solid;
         border-color: purple;
