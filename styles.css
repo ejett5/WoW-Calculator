@@ -19,15 +19,19 @@ button{
     justify-content: center;
     align-content: left;
 }
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
 
 .main{
     background-color: bisque;
     margin: 15px;
 }
-    
+    /* TODO Adjust the content sizing to adjust to screen size while justified centre */
 .grid-container{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         grid-template-columns: auto auto auto auto;
         background-color: bisque;
     }
