@@ -75,6 +75,7 @@ let marketValue;
 let fxDifficulty;
 let tf;
 let mastRank;
+let ts;
 
 // function for the attack bonus
 function attackModifier() {
@@ -157,21 +158,84 @@ function savingThrow(){bonusSave
 
 // Collaborative Construction
 function collaborativeConstruction(){
-    bonusSave = document.getElementById("bonusSave").value;
-    bonusSave = parseInt(bonusSave);
-    console.log(bonusSave);
-    abilityMod = document.getElementById("abMod").value;
-    abilityMod = parseInt(abilityMod);
-    console.log(abilityMod);
+    tinkerNumber = document.getElementById("tinkerNumber").value;
+    tinkerNumber = parseInt(tinkerNumber);
+    console.log(tinkerNumber);
+    tinkerLevel = document.getElementById("tinkerLevel").value;
+    tinkerLevel = parseInt(tinkerLevel);
+    console.log(tinkerLevel);
     
 
-    let savingThrow =  bonusSave + abilityMod;
+    let modConstruction =  tinkerNumber + tinkerLevel;
 
     // displaying output
-    console.log(savingThrow);
-    document.getElementById("safe").innerText = savingThrow
+    console.log(modConstruction);
+    document.getElementById("boom").innerText = modConstruction
 }
 
+// technological limit calc
+function technological(){
+    tinkClassLevel = document.getElementById("tinkClassLevel").value;
+    tinkClassLevel = parseInt(tinkClassLevel);
+    console.log(tinkClassLevel);
+    featMod = document.getElementById("featMod").value;
+    featMod = parseInt(featMod);
+    console.log(featMod);
+    
+
+    let techBoundary =  tinkClassLevel + featMod + 1;
+
+    // displaying output
+    console.log(techBoundary);
+    document.getElementById("techytech").innerText = techBoundary
+}
+
+
+// placeholder calc
+function theThingaMaBob(){
+    techLimit = document.getElementById("techLimit").value;
+    techLimit = parseInt(techLimit);
+    console.log(techLimit);
+    complexityScore = document.getElementById("complexityScore").value;
+    complexityScore = parseInt(complexityScore);
+    console.log(complexityScore);
+    marketValue = document.getElementById("marketValue").value;
+    marketValue = parseInt(marketValue);
+    console.log(marketValue);
+    
+
+    let yep =  techLimit + complexityScore + marketValue;
+
+    // displaying output
+    console.log(yep);
+    document.getElementById("dunno").innerText = yep
+}
+
+//market value of constructed items
+function sellValue(){
+    fxDifficulty = document.getElementById("fxDifficulty").value;
+    fxDifficulty = parseInt(fxDifficulty);
+    console.log(fxDifficulty);
+    ts = document.getElementById("ts").value;
+    ts = parseInt(ts);
+    console.log(ts);
+    complexityScore = document.getElementById("compScore").value;
+    complexityScore = parseInt(complexityScore);
+    console.log(complexityScore);
+    tf = document.getElementById("tf").value;
+    tf = parseInt(tf);
+    console.log(tf);
+    mastRank = document.getElementById("mastRank").value;
+    mastRank = parseInt(mastRank);
+    console.log(mastRank);
+    
+
+    let getBank =  fxDifficulty + ts + complexityScore + tf + mastRank;
+
+    // displaying output
+    console.log(getBank);
+    document.getElementById("money").innerText = getBank
+}
 
 
 //make array for housing skill check bonus (from character level)
