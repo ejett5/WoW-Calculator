@@ -1,11 +1,9 @@
 /*taking input and performing math function to find attack bonus */
 console.log("Test")
 
-// array for housing ability modifiers; unchangable
-// const array abilityModifierTable = [
 //     [abScore = 0, 0],  // if 0 then no modifier
-//     [abScore = 1, -5], //if great than 0 then -1 and only increases on even level
-//     [abScore = 2, -4], //if 2 then increase every other level
+//     [abScore = 1, -5], 
+//     [abScore = 2, -4], 
 //     [abScore = 3, -4],
 //     [abScore = 4, -3],
 //     [abScore = 5, -3],
@@ -16,33 +14,26 @@ console.log("Test")
 //     [abScore = 10, 0], 
 //     [abScore = 11, 0],
 //     [abScore = 12, 1],
-//     [abScore = 13, 1], etc
+//     [abScore = 13, 1], etc   *This is the pattern the formula must follow for abilityModifierTable
 
 
-// define getelementbyID
-// element.getElementByID = "Bob"
-// function is taken in N; then return (N * 0.5).floor - 5 ; see above as reference to check it is working -spence helped with the formula creation
-
-
-
-
-function abilityModifierTable(btn) {  //TODO link this function to the input id = "Bob"
+function abilityModifierTable(btn) {  
     //user input
     var element = document.getElementById('Bob')
     var n = element.value;
 
-    // converting user input via formula
-    let abilityModResult = Math.floor((n * 0.5) - 5)
     // if mod result is 0 then is 0 etc
-    if(n <=0 ){
+    if (n <= 0) {
         abilityModResult = 0;
         console.log(abilityModResult);
         btn.innerText = abilityModResult  //changeinnerText for button to show result
-    }else{
+    } else {
+        // converting user input via formula
+        let abilityModResult = Math.floor((n * 0.5) - 5)
         console.log(abilityModResult);
-    btn.innerText = abilityModResult  //changeinnerText for button to show result
+        btn.innerText = abilityModResult  //changeinnerText for button to show result
     }
-    
+
 }
 
 
@@ -102,7 +93,7 @@ function attackModifier() {
 }
 
 
-function armorClass(){
+function armorClass() {
     shieldBonus = document.getElementById("shieldBonus").value;
     shieldBonus = parseInt(shieldBonus);
     console.log(shieldBonus);
@@ -113,7 +104,7 @@ function armorClass(){
     sizeModifier = parseInt(sizeModifier);
     console.log(sizeModifier);
 
-    let armorMod =  shieldBonus + agilityModifier + sizeModifier + 10;
+    let armorMod = shieldBonus + agilityModifier + sizeModifier + 10;
 
     // displaying output
     console.log(armorMod);
@@ -123,7 +114,7 @@ function armorClass(){
 
 // grapple check
 
-function grappleCheck(){
+function grappleCheck() {
     grpCheck = document.getElementById("grpCheck").value;
     grpCheck = parseInt(grpCheck);
     console.log(grpCheck);
@@ -134,7 +125,7 @@ function grappleCheck(){
     spSizeModifier = parseInt(spSizeModifier);
     console.log(spSizeModifier);
 
-    let floorTest =  grpCheck + strModifier + spSizeModifier;
+    let floorTest = grpCheck + strModifier + spSizeModifier;
 
     // displaying output
     console.log(floorTest);
@@ -144,16 +135,17 @@ function grappleCheck(){
 
 // saving throw
 
-function savingThrow(){bonusSave
+function savingThrow() {
+    bonusSave
     bonusSave = document.getElementById("bonusSave").value;
     bonusSave = parseInt(bonusSave);
     console.log(bonusSave);
     abilityMod = document.getElementById("abMod").value;
     abilityMod = parseInt(abilityMod);
     console.log(abilityMod);
-    
 
-    let savingThrow =  bonusSave + abilityMod;
+
+    let savingThrow = bonusSave + abilityMod;
 
     // displaying output
     console.log(savingThrow);
@@ -164,16 +156,16 @@ function savingThrow(){bonusSave
 
 
 // Collaborative Construction
-function collaborativeConstruction(){
+function collaborativeConstruction() {
     tinkerNumber = document.getElementById("tinkerNumber").value;
     tinkerNumber = parseInt(tinkerNumber);
     console.log(tinkerNumber);
     tinkerLevel = document.getElementById("tinkerLevel").value;
     tinkerLevel = parseInt(tinkerLevel);
     console.log(tinkerLevel);
-    
 
-    let modConstruction =  tinkerNumber + tinkerLevel;
+
+    let modConstruction = tinkerNumber + tinkerLevel;
 
     // displaying output
     console.log(modConstruction);
@@ -181,16 +173,16 @@ function collaborativeConstruction(){
 }
 
 // technological limit calc
-function technological(){
+function technological() {
     tinkClassLevel = document.getElementById("tinkClassLevel").value;
     tinkClassLevel = parseInt(tinkClassLevel);
     console.log(tinkClassLevel);
     featMod = document.getElementById("featMod").value;
     featMod = parseInt(featMod);
     console.log(featMod);
-    
 
-    let techBoundary =  tinkClassLevel + featMod + 1;
+
+    let techBoundary = tinkClassLevel + featMod + 1;
 
     // displaying output
     console.log(techBoundary);
@@ -199,7 +191,7 @@ function technological(){
 
 
 // placeholder calc
-function theThingaMaBob(){
+function theThingaMaBob() {
     techLimit = document.getElementById("techLimit").value;
     techLimit = parseInt(techLimit);
     console.log(techLimit);
@@ -209,9 +201,9 @@ function theThingaMaBob(){
     marketValue = document.getElementById("marketValue").value;
     marketValue = parseInt(marketValue);
     console.log(marketValue);
-    
 
-    let yep =  techLimit + complexityScore + marketValue;
+
+    let yep = techLimit + complexityScore + marketValue;
 
     // displaying output
     console.log(yep);
@@ -219,7 +211,7 @@ function theThingaMaBob(){
 }
 
 //market value of constructed items
-function sellValue(){
+function sellValue() {
     fxDifficulty = document.getElementById("fxDifficulty").value;
     fxDifficulty = parseInt(fxDifficulty);
     console.log(fxDifficulty);
@@ -235,9 +227,9 @@ function sellValue(){
     mastRank = document.getElementById("mastRank").value;
     mastRank = parseInt(mastRank);
     console.log(mastRank);
-    
 
-    let getBank =  fxDifficulty + ts + complexityScore + tf + mastRank;
+
+    let getBank = fxDifficulty + ts + complexityScore + tf + mastRank;
 
     // displaying output
     console.log(getBank);
