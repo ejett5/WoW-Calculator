@@ -53,6 +53,13 @@ function d8(btn) {
     btn.innerText = random8
 }
 
+//make a d4 random generator
+function d4(btn) {
+    let random4 = Math.floor(Math.random() * 4) + 1; //random number between 1 and 20
+    console.log(random4);
+    btn.innerText = random4
+}
+
 // create variables that go into the bonus modifier functions
 let attackBonus;
 let strModifier;
