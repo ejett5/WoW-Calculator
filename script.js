@@ -48,14 +48,14 @@ function d20(btn) {
 
 //make a d8 random generator
 function d8(btn) {
-    let random8 = Math.floor(Math.random() * 8) + 1; //random number between 1 and 20
+    let random8 = Math.floor(Math.random() * 8) + 1; //random number between 1 and 8
     console.log(random8);
     btn.innerText = random8
 }
 
 //make a d4 random generator
 function d4(btn) {
-    let random4 = Math.floor(Math.random() * 4) + 1; //random number between 1 and 20
+    let random4 = Math.floor(Math.random() * 4) + 1; //random number between 1 and 4
     console.log(random4);
     btn.innerText = random4
 }
