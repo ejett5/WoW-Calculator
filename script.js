@@ -37,6 +37,13 @@ function abilityModifierTable(btn) {    //TODO add a random d20 to ourputs and f
 }
 
 
+//make a d100 random generator
+function d100(btn) {
+    let random100 = Math.floor(Math.random() * 100) + 1; //random number between 1 and 100
+    console.log(random100);
+    btn.innerText = random100
+}
+
 
 //make a d20 random generator
 function d20(btn) {
@@ -53,6 +60,13 @@ function d8(btn) {
     btn.innerText = random8
 }
 
+//make a d6 random generator
+function d6(btn) {
+    let random6 = Math.floor(Math.random() * 6) + 1; //random number between 1 and 6
+    console.log(random6);
+    btn.innerText = random6
+}
+
 //make a d4 random generator
 function d4(btn) {
     let random4 = Math.floor(Math.random() * 4) + 1; //random number between 1 and 4
@@ -60,7 +74,16 @@ function d4(btn) {
     btn.innerText = random4
 }
 
-// create variables that go into the bonus modifier functions
+//make a d3 random generator
+function d3(btn) {
+    let random3 = Math.floor(Math.random() * 3) + 1; //random number between 1 and 3
+    console.log(random3);
+    btn.innerText = random3
+}
+
+
+
+// create variables that go into the bonus modifier functions which follow below the variables
 let attackBonus;
 let strModifier;
 let sizeModifier;
