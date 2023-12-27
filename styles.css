@@ -34,7 +34,7 @@ h2{
     text-align: center;
 }
 body{
-    background-color: rgb(252, 220, 180);
+    background-color: purple;
     font-family: sans-serif;
 }
 
@@ -57,7 +57,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(252, 220, 180);
+    background-color: purple;
     /* border: 1px solid #ddd;
     border-radius: 5px; */
     margin: 10px;
@@ -93,8 +93,8 @@ footer{
 
     .grid-itemDice{
         flex: 1;
-        background-color: rgb(252, 220, 180);
-        border: 1px solid #ddd;
+        /* background-color: rgb(252, 220, 180); *Preserved incase the purple does not work  */
+        background-color: purple;
         color: white;
         border-radius: 5px;
         margin: 10px;
