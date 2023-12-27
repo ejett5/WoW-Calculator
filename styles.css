@@ -3,6 +3,23 @@
     padding: 0;
 }
 
+/* making media query to set responsiveness to screen size */
+
+/* Mobile device */
+@media only screen and (max-width:600px) {
+    .grid-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .grid-container{
+        
+        justify-content: center;
+    }
+}
+
 h1{
     text-align: center;
     margin: 5px;
@@ -19,15 +36,16 @@ button{
     justify-content: center;
     align-content: left;
 }
+
 footer{
     text-align: center;
     margin-top: 10px;
 }
 
-.main{
+/* .main{
     background-color: rgb(252, 220, 180);
     margin: 15px;
-}
+} */
     /* TODO Adjust the content sizing to adjust to screen size while justified centre */
 .grid-container{
         display: flex;
