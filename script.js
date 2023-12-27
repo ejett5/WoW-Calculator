@@ -115,7 +115,7 @@ function attackModifier() {
     sizeModifier = document.getElementById("sz").value;
     sizeModifier = parseInt(sizeModifier);
     // creating what they are to accomplish
-    let modAttack = attackBonus + strModifier + sizeModifier;
+    let modAttack = attackBonus + strModifier + sizeModifier +" is your attack bonus";
 
     // putputting to display paragraph
     console.log(modAttack);
@@ -134,7 +134,7 @@ function armorClass() {
     sizeModifier = parseInt(sizeModifier);
     console.log(sizeModifier);
 
-    let armorMod = shieldBonus + agilityModifier + sizeModifier + 10;
+    let armorMod = shieldBonus + agilityModifier + sizeModifier + 10 +" talk about lucky!";
 
     // displaying output
     console.log(armorMod);
@@ -155,7 +155,7 @@ function grappleCheck() {
     spSizeModifier = parseInt(spSizeModifier);
     console.log(spSizeModifier);
 
-    let floorTest = grpCheck + strModifier + spSizeModifier;
+    let floorTest =  grpCheck + strModifier + spSizeModifier + " Your grapple check is";
 
     // displaying output
     console.log(floorTest);

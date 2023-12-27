@@ -15,18 +15,27 @@
 
 @media only screen and (min-width:768px) {
     .grid-container{
-        
         justify-content: center;
     }
 }
 
+h1, h2, p, button{
+    margin-bottom: 10px;
+}
+
 h1{
     text-align: center;
-    margin: 5px;
+    margin: 15px 0px;
+    font-weight: bold;
 }
 
 h2{
+    background-color: rgb(252, 220, 180);
     text-align: center;
+}
+body{
+    background-color: rgb(252, 220, 180);
+    font-family: sans-serif;
 }
 
 button{
@@ -43,21 +52,34 @@ footer{
     margin-top: 10px;
 }
 
-/* .main{
-    background-color: rgb(252, 220, 180);
-    margin: 15px;
-} */
-    /* TODO Adjust the content sizing to adjust to screen size while justified centre */
+
 .grid-container{
-        display: flex;
-        /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(252, 220, 180);
+    /* border: 1px solid #ddd;
+    border-radius: 5px; */
+    margin: 10px;
+    padding: 10px;
+        /* display: flex;
+        flex-wrap: wrap;
         grid-template-columns: auto auto auto auto;
         background-color: rgb(252, 220, 180);
-        margin: 2px;
+        margin: 2px; */
     }
     
     .grid-item{
-        display: flex;
+        flex: 1;
+        background-color: rgb(34, 0, 128);
+        border: 1px solid #ddd;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+        /* display: flex;
         flex-direction: column;
         background-color:aliceblue;
         border: 1px solid;
@@ -65,7 +87,29 @@ footer{
         margin: 3px;
         padding: 20px;
         font-size: 15px;
-        text-align:right;
+        text-align:right; */
+        
+    }
+
+    .grid-itemDice{
+        flex: 1;
+        background-color: rgb(252, 220, 180);
+        border: 1px solid #ddd;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        background-color:aliceblue;
+        border: 1px solid;
+        border-color: rgb(34, 0, 128);
+        margin: 3px;
+        padding: 20px;
+        font-size: 15px;
+        text-align:right; */
         
     }
 
@@ -84,12 +128,22 @@ footer{
     font-style: italic;
 }
 
+/* Get the dice text to be horizontal */
 .dice{
-    background-color: darkblue;
+    background-color: rgb(34, 0, 128);
     color: white;
     font-size: larger;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    transform: rotate(45deg);
     margin: 4px;
-    padding: 5px;
+    padding: 25px;
     justify-content: center;
-    align-content: left;    
+    align-content: left; 
+    text-align: center;     
+}
+.dice-span{
+    display: inline-block;
+    transform: rotate(-45deg);
 }
