@@ -40,8 +40,9 @@ function abilityModifierTable(btn) {    //TODO add a random d20 to ourputs and f
 //make a d100 random generator
 function d100(btn) {
     let random100 = Math.floor(Math.random() * 100) + 1; //random number between 1 and 100
-    console.log(random100);
+    console.log(random100);    
     btn.innerText = random100
+    // document.querySelector('d100').computedStyleMap.transform = 'rotate(-45deg)'; // this is meant to keep the text horizontal after button click, currently rotates to same as button rotation after click
 }
 
 
