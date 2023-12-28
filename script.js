@@ -41,7 +41,7 @@ function abilityModifierTable(btn) {    //TODO add a random d20 to ourputs and f
 function d100(btn) {
     let random100 = Math.floor(Math.random() * 100) + 1; //random number between 1 and 100
     console.log(random100);    
-    btn.innerText = random100
+    btn.firstElementChild.innerText = random100
     // document.querySelector('d100').computedStyleMap.transform = 'rotate(-45deg)'; // this is meant to keep the text horizontal after button click, currently rotates to same as button rotation after click
 }
 
@@ -50,7 +50,7 @@ function d100(btn) {
 function d20(btn) {
     let random20 = Math.floor(Math.random() * 20) + 1; //random number between 1 and 20
     console.log(random20);
-    btn.innerText = random20
+    btn.firstElementChild.innerText = random20
 }
 
 
@@ -58,28 +58,28 @@ function d20(btn) {
 function d8(btn) {
     let random8 = Math.floor(Math.random() * 8) + 1; //random number between 1 and 8
     console.log(random8);
-    btn.innerText = random8
+    btn.firstElementChild.innerText = random8
 }
 
 //make a d6 random generator
 function d6(btn) {
     let random6 = Math.floor(Math.random() * 6) + 1; //random number between 1 and 6
     console.log(random6);
-    btn.innerText = random6
+    btn.firstElementChild.innerText = random6
 }
 
 //make a d4 random generator
 function d4(btn) {
     let random4 = Math.floor(Math.random() * 4) + 1; //random number between 1 and 4
     console.log(random4);
-    btn.innerText = random4
+    btn.firstElementChild.innerText = random4
 }
 
 //make a d3 random generator
 function d3(btn) {
     let random3 = Math.floor(Math.random() * 3) + 1; //random number between 1 and 3
     console.log(random3);
-    btn.innerText = random3
+    btn.firstElementChild.innerText = random3
 }
 
 
