@@ -34,6 +34,10 @@ h2{
     background-color: rgb(252, 220, 180);
     text-align: center;
 }
+p{
+    color: #ddd;
+}
+
 body{
     background-color: purple;
     font-family: sans-serif;
