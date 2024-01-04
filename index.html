@@ -14,12 +14,24 @@
 
 <body class="main">
 
-    <h1> WoW Calculator</h1>
+    <div class="hero-image">
+        <h1 class="hero-text"> WoW Calculator</h1>
+        <sub class="hero-text">May your adventure be well calculated!</sub>
+    </div>
+
+    <div class="grid-container">
+        <h3>For all modifiers refer to your character sheet for the <span
+             style="font-style: italic; color: rgb(34, 0, 128);">Raw</span> information and input that <span
+             style="font-style: italic; color: rgb(34, 0, 128);">Number</span> into the calculator</h3>
+    </div>
+
     <!--storing calculations for various modifiers-->
     <h2>Ability Modifier </h2>
+
     <div class="grid-container">
 
         <div class="grid-item">
+            <sub>Please input your ability skill level to discover what your modifier is</sub>
             <label for="Bob">Your Ability Skill Level:</label>
             <input type="number" name="Bob" id="Bob">
 
@@ -29,17 +41,23 @@
     <hr>
     <!--Random dice generator-->
     <div class="grid-container">
-<!-- TODO add js to keep the text aligned horizontally after button click -->
+
         <!--d100 random generator-->
-        <div class="grid-itemDice">
-            <button class="dice" onclick="d100(this)"><span class="dice-span">d100</span></button>
+        <div class="dice-container">
+            <div class="grid-itemDice">
+                <button class="dice" onclick="d100(this)"><span class="dice-span">d100</span></button>
+            </div>
+            <!-- <p><i>multiple dice rolls displayed here, coming soon!</i></p> TODO add script.innerText and allow input for multiple dice to be rolled -->
         </div>
 
         <!--d20 random generator-->
-        <div class="grid-itemDice">
-            <button class="dice" onclick="d20(this)"><span class="dice-span">d20</span></button>
+        <div class="dice-container">
+            <div class="grid-itemDice">
+                <button class="dice" onclick="d20(this)"><span class="dice-span">d20</span></button>
+            </div>
+            <!-- <p>multiple dice rolls displayed here</p> -->
         </div>
-        
+
         <!--D8 random-->
         <div class="grid-itemDice">
             <button class="dice" onclick="d8(this)"><span class="dice-span">d8</span></button>
@@ -52,12 +70,12 @@
 
         <!--D4 random-->
         <div class="grid-itemDice">
-            <button  class="dice" onclick="d4(this)"><span class="dice-span">d4</span></button>
+            <button class="dice" onclick="d4(this)"><span class="dice-span">d4</span></button>
         </div>
 
         <!--d3 random-->
         <div class="grid-itemDice">
-            <button  class="dice" onclick="d3(this)"><span class="dice-span">d3</span></button>
+            <button class="dice" onclick="d3(this)"><span class="dice-span">d3</span></button>
         </div>
 
     </div>
@@ -194,6 +212,13 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="grid-container">
+        <p>If you have any feedback here is a <a href="https://docs.google.com/forms/d/e/1FAIpQLScDVG8QWT9E7BFAPCSA-QCexo5MJnYEtkFISKZAwf7ldsD7TQ/viewform?usp=pp_url" target="_blank">survey</a></p>
+    </div>
+    
 
 
     <script src="script.js">
