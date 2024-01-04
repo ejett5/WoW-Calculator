@@ -34,8 +34,16 @@ h2{
     background-color: rgb(252, 220, 180);
     text-align: center;
 }
-p{
+
+p,h3{
     color: #ddd;
+}
+
+sub{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    font-style: italic;
 }
 
 body{
